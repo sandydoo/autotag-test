@@ -14,8 +14,8 @@ jobs:
       - uses: sandydoo/haskell-autotag@02b05eba959324f6eeffee282d32bcf4299b3af4
         id: autotag
       - run: |
-          echo "${{ steps.autotag.outputs.created }}"
-          echo "${{ steps.autotag.outputs.name }}"
-          echo "${{ steps.autotag.outputs.version }}"
-          echo "${{ steps.autotag.outputs.version-tags }}"
-          echo "${{ steps.autotag.outputs.version-with-tags }}"
+          echo "created: ${{ steps.autotag.outputs.created }}"
+          echo "name: ${{ steps.autotag.outputs.name }}"
+          echo "version: ${{ steps.autotag.outputs.version }}"
+          echo "version-tags: ${{ steps.autotag.outputs.version-tags }}"
+          echo "version-with-tags: ${{ steps.autotag.outputs.version-with-tags }}"
