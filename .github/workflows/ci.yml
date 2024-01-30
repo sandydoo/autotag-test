@@ -13,4 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: sandydoo/haskell-autotag@02b05eba959324f6eeffee282d32bcf4299b3af4
         id: autotag
-      - run: echo "${{ steps.autotag.outputs }}"
+      - run: |
+          echo "${{ steps.autotag.outputs.created }}"
+          echo "${{ steps.autotag.outputs.name }}"
+          echo "${{ steps.autotag.outputs.version }}"
+          echo "${{ steps.autotag.outputs.version-tags }}"
+          echo "${{ steps.autotag.outputs.version-with-tags }}"
