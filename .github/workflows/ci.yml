@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: sandydoo/haskell-autotag/fix-set-output-deprecation
+      - uses: sandydoo/haskell-autotag@02b05eba959324f6eeffee282d32bcf4299b3af4
         id: autotag
